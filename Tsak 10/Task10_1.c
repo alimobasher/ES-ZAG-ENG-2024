@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 unsigned int NumberOne = 10;
-unsigned int *Ptr;
+unsigned int *Ptr = NULL;
 
 int main()
 {
@@ -10,9 +10,19 @@ int main()
 
     Ptr = &NumberOne;
 
-    *Ptr = 20;
-    printf("NumberOne Value edit = %i\n" ,NumberOne);
+    if(Ptr != NULL)
+    {
+        *Ptr = 20;
+        printf("NumberOne Value edit = %i\n" ,NumberOne);
+    }
+
+    else
+    {
+        Printf("Error !!");
+
+    }
 
 
     return 0;
 }
+
