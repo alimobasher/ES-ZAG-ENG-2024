@@ -10,18 +10,8 @@ int main()
 
     Ptr = &NumberOne;
 
-    if(Ptr != NULL)
-    {
-        *Ptr = 20;
-        printf("NumberOne Value edit = %i\n" ,NumberOne);
-    }
-
-    else
-    {
-        Printf("Error !!");
-
-    }
-
+    *Ptr = 20;
+    printf("NumberOne Value edit = %i\n" ,NumberOne);
 
     return 0;
 }
